@@ -8,6 +8,14 @@ app.get('/', (req, res) => {
     res.send('Server Started');
 });
 
+app.get('/api', (req, res) => {
+
+    res.json({
+        message: 'Welcome to the API',
+        version: '1.0.0'
+    })
+})
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
