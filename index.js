@@ -17,12 +17,11 @@ app.get('/api', (req, res) => {
 })
 
 app.get('/api/jokes', (req, res) => {
-
-    res.json({
-        id: 1,
-        joke: 'Why did the scarecrow win an award? Because he was outstanding in his field.'
-
-    },
+    const jokes = [
+        {
+            id: 1,
+            joke: 'Why did the scarecrow win an award? Because he was outstanding in his field.'
+        },
         {
             id: 2,
             joke: 'Why did the scarecrow win an award? Because he was outstanding in his field.'
@@ -39,8 +38,11 @@ app.get('/api/jokes', (req, res) => {
             id: 5,
             joke: 'Why did the scarecrow win an award? Because he was outstanding in his field.'
         }
-    )
-})
+    ];
+
+    res.json(jokes);
+});
+
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
