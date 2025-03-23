@@ -26,7 +26,8 @@ app.get('/api/jokes', (req, res) => {
         {
             id: 2,
             joke: 'Why did the scarecrow win an award? Because he was outstanding in his field.'
-        }, {
+        },
+        {
         id: 3,
         joke: 'Why did the scarecrow win an award? Because he was outstanding in his field.'
     }
