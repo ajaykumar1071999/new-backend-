@@ -1,0 +1,21 @@
+{
+  "name": "node-practice",
+  "version": "1.0.0",
+  "description": "this is practice project of node with mongoDB",
+  "main": "index.js",
+  "engines": {
+    "node": "20.14.0"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajay Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-practice": "file:",
+    "nodemon": "^3.1.9"
+  }
+}
