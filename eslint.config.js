@@ -4,7 +4,7 @@ import js from "@eslint/js";
 
 export default defineConfig([
   {
-    ignores: ["**/node_modules/**"], // 👈 Ignore node_modules globally
+    ignores: ["**/node_modules/**"]
   },
   { files: ["**/*.{js,mjs,cjs}"] },
   {
