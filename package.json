@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "this is practice project of node with mongoDB",
   "main": "index.js",
+  "type": "module",
   "engines": {
     "node": "20.14.0"
   },
@@ -10,7 +11,9 @@
     "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "prepare": "husky",
-    "postinstall": "husky install"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "author": "Ajay Kumar",
   "license": "ISC",
@@ -25,6 +28,9 @@
     "nodemon": "^3.1.9"
   },
   "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
     "husky": "^9.1.7",
     "prettier": "3.5.3"
   }
