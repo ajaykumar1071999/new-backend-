@@ -6,6 +6,8 @@ import cookieParser from 'cookie-parser';
 import bcrypt from 'bcrypt';
 import uploadToCloudinary from './utils/cloudinary.js';
 import { upload } from './middlewares/fileUpload/index.js';
+import userRouter from './routes/users/index.js';
+
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -22,6 +24,8 @@ app.use(express.urlencoded({ extends: true, limit: '20kb' }));
 app.use(express.static('public'));
 
 connectToDB();
+
+app.use('/api/v1/users', userRouter);
 
 app.post('/start', upload.single('avtar_image'), async (req, res) => {
   const avtar_image = req.file;

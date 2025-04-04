@@ -5,5 +5,7 @@ class ApiResponse {
     this.data = data;
   }
 }
-
-export default ApiResponse;
+const response = (statusCode, message = 'Success', data) => {
+  return new ApiResponse(statusCode, message, data);
+};
+export default response;
