@@ -8,7 +8,6 @@ import uploadToCloudinary from './utils/cloudinary.js';
 import { upload } from './middlewares/fileUpload/index.js';
 import userRouter from './routes/users/index.js';
 
-
 const app = express();
 const port = process.env.PORT || 3000;
 
